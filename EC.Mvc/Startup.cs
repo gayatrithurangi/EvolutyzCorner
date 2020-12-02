@@ -12,6 +12,8 @@ using EC.Mvc.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using EC.Infra.Data.Context;
+using Microsoft.Extensions.Options;
 
 namespace EC.Mvc
 {
@@ -32,6 +34,12 @@ namespace EC.Mvc
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+
+            services.AddDbContext<EzEvolutyzCornerWebDevContext>(options =>
+            options.UseSqlServer(
+                Configuration.GetConnectionString("EvolutyzCornerDataEntities")));
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
