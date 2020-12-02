@@ -14,6 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EC.Application\EC.Application.csproj" />
+    <ProjectReference Include="..\EC.Domain\EC.Domain.csproj" />
     <ProjectReference Include="..\EC.Infra.Data\EC.Infra.Data.csproj" />
   </ItemGroup>
 

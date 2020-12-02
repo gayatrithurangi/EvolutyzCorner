@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\EC.Infra.Data\EC.Infra.Data.csproj" />
   </ItemGroup>
 
