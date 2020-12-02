@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>aspnet-EC.Mvc-C3ADBC01-0BBF-45E0-9C00-E44F353AC72A</UserSecretsId>
+    <UserSecretsId>aspnet-EC.Mvc-A33E44B0-F90C-4F3B-9E76-7897F61F6DBB</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EC.Domain\EC.Domain.csproj" />
+    <ProjectReference Include="..\EC.Infra.Data\EC.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>
